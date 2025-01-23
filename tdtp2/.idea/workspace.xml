@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b96bcfcc-214c-4d68-84cc-fa85a4146c24" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../tdtp1/carApp/src/main/java/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tdtp1/carApp/src/main/java/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tdtp1/carApp/src/main/java/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tdtp1/carApp/src/main/java/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tdtp1/carApp/src/main/java/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tdtp1/carApp/src/main/java/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tdtp1/carApp/src/test/java/CarAppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tdtp1/carApp/src/test/java/CarAppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tdtp1/carApp/src/test/java/CarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tdtp1/carApp/src/test/java/CarTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tdtp1/carApp/src/test/java/DriverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tdtp1/carApp/src/test/java/DriverTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tdtp1/tutoRefactoring/src/main/java/SimpleClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tdtp1/tutoRefactoring/src/main/java/SimpleClass.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/feeCalculator" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2s1hRykZRrE4P3edGdDO540uOie" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/SkFxF/OneDrive/Documents/IUT/3eme_annee/Semestre_6/R6D05/tdtp2/feeCalculator",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b96bcfcc-214c-4d68-84cc-fa85a4146c24" name="Changes" comment="" />
+      <created>1737628983916</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1737628983916</updated>
+      <workItem from="1737628984877" duration="59000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -1,49 +1,49 @@
 /**
- * La classe Voiture représente une voiture avec des caractéristiques
+ * La classe Car représente une voiture avec des caractéristiques
  * comme le modèle, la couleur et la vitesse. Elle permet d'accélérer
  * ou de ralentir la voiture.
  */
-public final class Voiture {
+public final class Car {
     /**
      * Le modèle de la voiture.
      */
-    private final String modele;
+    private final String model;
 
     /**
      * La couleur de la voiture.
      */
-    private final String couleur;
+    private final String color;
 
     /**
      * La vitesse actuelle de la voiture.
      */
-    private int vitesse;
+    private int speed;
 
     /**
      * Incrément de vitesse lors de l'accélération ou du ralentissement.
      */
-    private static final int INCREMENT_VITESSE = 10;
+    private static final int INCREMENT_SPEED = 10;
 
     /**
      * Vitesse maximale de la voiture en km/h.
      */
-    private static final int VITESSE_MAX = 120;
+    private static final int SPEED_MAX = 120;
 
     /**
      * Vitesse minimale de la voiture en km/h.
      */
-    private static final int VITESSE_MIN = 0;
+    private static final int SPEED_MIN = 0;
 
     /**
-     * Constructeur de la classe Voiture.
+     * Constructeur de la classe Car.
      *
      * @param model Le modèle de la voiture.
      * @param color La couleur de la voiture.
      */
-    public Voiture(final String model, final String color) {
-        this.modele = model;
-        this.couleur = color;
-        this.vitesse = VITESSE_MIN;
+    public Car(final String model, final String color) {
+        this.model = model;
+        this.color = color;
+        this.speed = SPEED_MIN;
     }
 
     /**
@@ -51,8 +51,8 @@ public final class Voiture {
      *
      * @return La vitesse actuelle en km/h.
      */
-    public int getVitesse() {
-        return this.vitesse;
+    public int getSpeed() {
+        return this.speed;
     }
 
     /**
@@ -60,9 +60,9 @@ public final class Voiture {
      * jusqu'à une vitesse maximale de 120 km/h.
      * Affiche les détails après l'accélération.
      */
-    public void accelerer() {
-        if (vitesse + INCREMENT_VITESSE <= VITESSE_MAX) {
-            vitesse += INCREMENT_VITESSE;
+    public void accelerate() {
+        if (speed + INCREMENT_SPEED <= SPEED_MAX) {
+            speed += INCREMENT_SPEED;
             showDetails();
         } else {
             System.out.println("La vitesse maximale est atteinte.");
@@ -74,8 +74,8 @@ public final class Voiture {
      * Affiche les détails après le ralentissement.
      */
     public void slow() {
-        if (vitesse - INCREMENT_VITESSE >= VITESSE_MIN) {
-            vitesse -= INCREMENT_VITESSE;
+        if (speed - INCREMENT_SPEED >= SPEED_MIN) {
+            speed -= INCREMENT_SPEED;
             showDetails();
         } else {
             System.out.println("La voiture est déjà à l'arrêt.");
@@ -87,53 +87,53 @@ public final class Voiture {
      * y compris le modèle, la couleur et la vitesse actuelle.
      */
     private void showDetails() {
-        System.out.println("Modèle : " + modele);
-        System.out.println("Couleur : " + couleur);
-        System.out.println("Vitesse actuelle : " + vitesse + " km/h");
+        System.out.println("Modèle : " + model);
+        System.out.println("Couleur : " + color);
+        System.out.println("Vitesse actuelle : " + speed + " km/h");
     }
 
     /**
-     * Démarre la voiture si le conducteur est adulte.
+     * Démarre la voiture si le driver est adulte.
      *
-     * @param conducteur
+     * @param driver
      */
-    public void startCar(final Conducteur conducteur) {
-        if (conducteur.estAdulte()) {
-            System.out.println(conducteur.getNom() + " démarre la voiture.");
+    public void startCar(final Driver driver) {
+        if (driver.isAdult()) {
+            System.out.println(driver.getName() + " démarre la voiture.");
         } else {
             System.out.println(
-                    "Le conducteur n'est pas assez âgé pour conduire.");
+                    "Le driver n'est pas assez âgé pour conduire.");
         }
     }
 
     /**
      * Arrête la voiture.
      *
-     * @param conducteur
+     * @param driver
      */
-    public void stopCar(final Conducteur conducteur) {
-        System.out.println(conducteur.getNom() + " arrête la voiture.");
+    public void stopCar(final Driver driver) {
+        System.out.println(driver.getName() + " arrête la voiture.");
     }
 
     /**
      * Change la vitesse de la voiture à une nouvelle valeur.
      *
      * @param nouvelleVitesse La nouvelle vitesse à atteindre.
-     * @param conducteur
+     * @param driver
      */
     public void changeSpeed(final int nouvelleVitesse,
-                            final Conducteur conducteur) {
-        System.out.println(conducteur.getNom()
+                            final Driver driver) {
+        System.out.println(driver.getName()
                 + " change la vitesse de la voiture à "
                 + nouvelleVitesse);
 
-        if (getVitesse() >= nouvelleVitesse) {
-            while (getVitesse() > nouvelleVitesse) {
+        if (getSpeed() >= nouvelleVitesse) {
+            while (getSpeed() > nouvelleVitesse) {
                 slow();
             }
         } else {
-            while (getVitesse() < nouvelleVitesse) {
-                accelerer();
+            while (getSpeed() < nouvelleVitesse) {
+                accelerate();
             }
         }
     }
