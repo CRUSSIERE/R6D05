@@ -20,7 +20,7 @@ public class VoitureTest {
     @Test
     public void testRalentir() {
         voiture.accelerer();
-        voiture.ralentir();
+        voiture.slow();
         assertThat(voiture.getVitesse()).isEqualTo(0);
     }
 }
